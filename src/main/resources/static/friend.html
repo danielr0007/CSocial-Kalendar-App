@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <script src="https://kit.fontawesome.com/cd8254595d.js" crossorigin="anonymous"></script>
+
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="css/calendar_main.css" />
+    <title>Friend</title>
+
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="left_side padding5">
+            <div class="logo">
+                <img src="images/logo.png" alt="" srcset="" />
+            </div>
+            <div class="change_months_dropdown" id="today_element">
+                <h5 class="liteweightfont">Today</h5>
+            </div>
+            <div class="change_month_arrow">
+                <i class="fa-solid fa-chevron-left" id="previous_month"></i>
+                <i class="fa-solid fa-chevron-right" id="next_month"></i>
+            </div>
+            <div class="month_year_display">
+                <h5 class="liteweightfont" id="nav_curr_date_display2">May 2022</h5>
+            </div>
+        </div>
+        <div class="mid padding5"></div>
+        <div class="right_side padding5">
+            <!-- dropdown menu OMAR CODE*************************-->
+            <div class="dropdown">
+                <div class="user_pic">
+                    <img id="userPhoto" src="images/userDefault.png">
+                </div>
+                <div class="dropdown-content">
+                    <!--hidden-->
+                    <div>
+                        <span class="material-symbols-outlined">account_circle</span>
+                        <a id="myProfileButton">My profile</a>
+                    </div>
+                    <div>
+                        <span class="material-symbols-outlined">add_a_photo</span>
+                        <a id="changePictureButton">Change picture</a>
+                        <input id="fileuploader" type="file" hidden />
+                    </div>
+                    <div>
+                        <span class="material-symbols-outlined">person</span>
+                        <a id="accountInfoButton">Account info</a>
+                    </div>
+                    <div>
+                        <span class="material-symbols-outlined">logout</span>
+                        <a id="logoutButton">Logout</a>
+                    </div>
+                    <!-- dropdown menu OMAR CODE-->
+                    <!--hidden-->
+                </div>
+            </div>
+            <div id="userNavName"></div>
+            <!--user email on navbar-->
+        </div>
+    </nav>
+</header>
+<!-- user info pop up (hidden) OMAR CODE-->
+
+<div class="signUpForm hide">
+    <div class="signUpFormTitle">
+        <span id="signUpFormCloseButton" class="material-symbols-outlined">
+          close
+        </span>
+        <h1>User Info</h1>
+    </div>
+    <div class="signUpFormBody">
+        <div class="userInfoBoxPicture">
+            <img id="userInfoBoxPictureImage" src="images/tesla.jpeg" />
+        </div>
+        <label for="userInfoBoxFirstName">First Name:</label>
+        <div id="userInfoBoxFirstName"></div>
+
+        <label for="userInfoBoxLastName">Last Name:</label>
+        <div id="userInfoBoxLastName"></div>
+
+        <label for="userInfoBoxEmail">Email:</label>
+        <div id="userInfoBoxEmail"></div>
+
+        <label for="userInfoBoxBirthday">Birthday:</label>
+        <div id="userInfoBoxBirthday"></div>
+
+        <label for="userInfoBoxGender">Gender:</label>
+        <div id="userInfoBoxGender"></div>
+    </div>
+</div>
+
+<div class="overlay hide"></div>
+
+<!-- END   user info pop up (hidden) OMAR CODE-->
+<!-- MAIN APP SPACE........................ -->
+<main>
+    <!-- left side of app that has all the friend functionality -->
+    <div class="left_sidebar">
+        <div class="friendProfileInfo">
+            <div class="friendProfileInfoBody">
+                <img id="friendProfilePicture" src="images/userDefault.png" />
+                <div class="friendProfileInfoBody2">
+                    <h4 id="friendProfileInfoTitle"></h4>
+                    <p id="friendProfileEmail"></p>
+                    <p id="friendProfileFriendsCount"></p>
+                    <button id="friendButton">
+                        Friends<span class="material-symbols-outlined">done</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="friends_list">
+            <h4 id="friends_list_Title"></h4>
+            <div class="friendListDiv" id="friendListDiv"></div>
+        </div>
+    </div>
+
+    <!-- middle of app that contains all the dates -->
+    <div class="calendar_space"></div>
+</main>
+<!-- CALENDAR CONTENT BOX SECTION......................................... -->
+<div class="overlay hide"></div>
+
+<div class="calendar_content_box hide">
+    <div class="images_container"></div>
+    <div class="content_box_inner_container">
+        <p
+                id="editable_paragraph"
+                contenteditable="true"
+                aria-multiline="true"
+                data-placeholder="Type something..."
+        ></p>
+    </div>
+    <div class="content_box_navigation">
+        <!-- <div class="add_pic_button"><i class="fa-solid fa-plus"></i></div> -->
+        <label class="add_pic_button" for="uploadpic"
+        ><i id="image_icon" class="fa-solid fa-image"></i
+        ></label>
+        <input type="file" id="uploadpic" name="photo" />
+        <!-- accept="image/png, image/jpeg, pdf"> -->
+
+        <p id="day_editable_content_box">l</p>
+        <i id="close_box" class="fa-solid fa-square-xmark"></i>
+    </div>
+</div>
+<footer>Made by Daniel Rasch & Omar Dumet 2022</footer>
+<script src="js/friendProfile.js"></script>
+
+</body>
+</html>

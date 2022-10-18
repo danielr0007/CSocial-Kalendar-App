@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>login page</title>
+
+    <link rel="stylesheet" href="css/login.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="mainContainerContent">
+        <div class="ContainerLeft">
+          <div class="logoContainer">
+            <img src="images/logo.png" />
+          </div>
+        </div>
+        <div class="ContainerRight">
+          <div class="loginForm">
+            <div class="loginFormTop">
+              <input type="email" placeholder="Email" id="loginEmail" />
+              <input
+                type="password"
+                placeholder="Password"
+                id="loginPassword"
+              />
+              <button id="loginButton">Log In</button>
+              <p>Forgot password?</p>
+              <p id="loginFailedAlert" class="hide">Login failed!</p>
+            </div>
+            <div class="loginFormBottom">
+              <button id="createAccountButton">Create new account</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>
+        <p>
+          <a href="https://github.com/danielr0007">Dany</a> &
+          <a href="https://github.com/omardumet">Omar</a> © 2022.
+        </p>
+      </div>
+    </div>
+
+    <div class="signUpForm hide">
+      <div class="signUpFormTitle">
+        <span id="signUpFormCloseButton" class="material-symbols-outlined">
+          close
+        </span>
+        <h1>Sign Up</h1>
+        <p>It's quick and easy.</p>
+      </div>
+      <div class="signUpFormBody">
+        <div class="signUpFormBodyTop">
+          <input type="text" placeholder="First Name" id="firstName" />
+          <input type="text" placeholder="Last Name" id="lastName" />
+        </div>
+
+        <input type="email" placeholder="Email" id="email" />
+        <input type="password" placeholder="New password" id="password" />
+        <label for="birthday">Birthday</label>
+        <input
+          type="date"
+          placeholder="Birthday"
+          id="birthday"
+          max="2005-01-02"
+        />
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <button id="signUpButton">Sign Up</button>
+      </div>
+
+      <p class="hide" id="userRegisteredAlert">You've been registered!</p>
+      <p class="hide" id="alreadyRegisteredAlert">
+        Email address is already in use!
+      </p>
+    </div>
+
+    <div class="overlay hide"></div>
+
+    <script type="module" src="js/login.js"></script>
+  </body>
+</html>

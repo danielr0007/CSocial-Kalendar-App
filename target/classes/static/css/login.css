@@ -1,0 +1,335 @@
+html {
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+body {
+  margin: 0;
+}
+
+.mainContainer {
+  background-color: #efeff0;
+  height: 90vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.mainContainerContent {
+  background-color: rgba(0, 0, 255, 0);
+  height: 600px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-flow: row;
+  padding: 5px;
+}
+
+.ContainerLeft {
+  background-color: rgba(255, 228, 196, 0);
+  width: 50%;
+  padding: 5px;
+}
+.ContainerRight {
+  display: flex;
+  flex-flow: column;
+  background-color: rgba(99, 87, 72, 0);
+  width: 50%;
+  padding: 5px;
+  justify-content: center;
+}
+
+.loginForm {
+  display: flex;
+  flex-flow: column;
+  background-color: #ffffff;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.09);
+  max-width: 450px;
+}
+
+.loginFormTop {
+  display: flex;
+  flex-flow: column;
+  padding: 20px 20px;
+  background-color: rgba(255, 127, 80, 0);
+}
+.loginFormTop input,
+button {
+  height: 40px;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  border: solid rgba(0, 0, 0, 0.09) 2px;
+  color: #292929;
+}
+.loginFormTop button {
+  background-color: #1d83ff;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+.loginFormTop button:hover {
+  background-color: #1760b9;
+}
+
+.loginFormTop p {
+  text-align: center;
+  color: #1d83ff;
+  cursor: pointer;
+}
+.loginFormTop p:hover {
+  text-decoration: underline 2px;
+}
+
+.loginFormBottom {
+  background-color: rgba(226, 153, 126, 0);
+  display: flex;
+  flex-flow: column;
+  padding: 20px 5px;
+  border-top: solid rgba(44, 44, 44, 0.09) 2px;
+}
+.loginFormBottom button {
+  background-color: #00c659;
+  color: white;
+  min-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  padding: 15px 5px;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+.loginFormBottom button:hover {
+  background-color: #01aa4c;
+}
+
+.footer {
+  background-color: #ffffff;
+  height: 10vh;
+  color: rgba(44, 44, 44, 0.41);
+  text-align: right;
+  border-top: solid rgba(44, 44, 44, 0.09) 2px;
+  line-height: 60px;
+  padding: 0 10px;
+}
+.footer p a {
+  background-color: rgba(162, 162, 162, 0);
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.signUpForm {
+  background-color: #ffffff;
+  display: flex;
+  flex-flow: column;
+  padding: 0 15px 30px 15px;
+  width: 450px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.09);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.hide {
+  display: none;
+}
+
+.signUpFormTitle {
+  background-color: rgba(127, 255, 212, 0);
+  color: #292929;
+}
+.signUpFormTitle p {
+  color: rgba(41, 41, 41, 0.76);
+  margin-top: 5px;
+}
+.signUpFormTitle span {
+  color: rgb(0, 0, 0);
+  background-color: rgba(127, 244, 255, 0);
+  width: 100%;
+  text-align: right;
+  font-weight: bold;
+  color: rgba(41, 41, 41, 0.76);
+  margin-top: 10px;
+  cursor: default;
+}
+
+.signUpFormTitle h1 {
+  color: #292929;
+  background-color: rgba(127, 244, 255, 0);
+  margin: 0;
+}
+
+.signUpFormBodyTop {
+  display: flex;
+  flex-flow: row;
+  background-color: rgba(255, 228, 196, 0);
+}
+.signUpFormBodyTop input {
+  margin-bottom: 10px;
+  width: 43%;
+  padding: 5px 10px;
+  font-size: 18px;
+  background-color: rgb(246, 246, 246);
+}
+
+.signUpFormBodyTop #lastName {
+  margin-left: auto;
+}
+
+.signUpFormBody {
+  display: flex;
+  flex-flow: column;
+  background-color: rgba(127, 244, 255, 0);
+  padding: 25px 40px;
+  border-top: solid rgba(44, 44, 44, 0.09) 2px;
+}
+.signUpFormBody input,
+select {
+  margin-bottom: 10px;
+  height: 40px;
+  border-radius: 10px;
+  border: solid rgba(0, 0, 0, 0.09) 2px;
+  padding: 5px 10px;
+  font-size: 18px;
+  color: #292929;
+  background-color: rgb(246, 246, 246);
+}
+.signUpFormBody select,
+#birthday {
+  background-color: rgb(255, 255, 255);
+  padding-right: 10px;
+  color: #a2a2a2;
+}
+.signUpFormBody label {
+  font-size: 14px;
+  color: rgba(41, 41, 41, 0.71);
+  padding: 5px;
+}
+.signUpFormBody button {
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  background-color: #01aa4c;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+}
+
+#userRegisteredAlert {
+  color: #00c659;
+  text-align: center;
+}
+#alreadyRegisteredAlert {
+  color: rgba(255, 0, 38, 0.87);
+  text-align: center;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(249, 249, 249, 0.75);
+}
+
+#loginFailedAlert {
+  color: red;
+}
+
+@media only screen and (max-width: 1000px) {
+  .mainContainerContent {
+    background-color: rgba(142, 210, 187, 0);
+    flex-flow: column;
+    justify-content: center;
+    width: 100%;
+    font-size: 32px;
+  }
+
+  .ContainerLeft {
+    width: 100%;
+    background-color: rgba(65, 33, 33, 0);
+    text-align: center;
+  }
+
+  .ContainerRight {
+    width: 100%;
+    background-color: rgba(140, 120, 80, 0);
+  }
+
+  .loginForm {
+    display: flex;
+    flex-flow: column;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.09);
+    min-width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .loginFormTop input,
+  button {
+    height: 80px;
+    font-size: 32px;
+    margin-top: 15px;
+  }
+
+  .loginFormTop button {
+    font-size: 32px;
+  }
+  .loginFormBottom button {
+    padding: 25px;
+    font-size: 32px;
+  }
+
+  .footer p a,
+  .footer {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .logoContainer img {
+    width: 250px;
+  }
+
+  .signUpForm {
+    width: 90%;
+    font-size: 32px;
+  }
+
+  .signUpFormTitle span {
+    font-size: 36px;
+  }
+
+  .signUpFormBodyTop input {
+    font-size: 32px;
+  }
+
+  .signUpFormBody input,
+  select {
+    margin-bottom: 20px;
+    height: 80px;
+    font-size: 36px;
+  }
+
+  .signUpFormBody label {
+    font-size: 30px;
+  }
+  .signUpFormBody button {
+    font-size: 38px;
+  }
+}
