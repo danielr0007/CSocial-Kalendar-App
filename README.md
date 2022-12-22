@@ -1,4 +1,4 @@
-# CalendarApp [socialkalendar.herokuapp.com](https://socialkalendar.herokuapp.com) 
+# CalendarApp [https://socialkalendar.herokuapp.com/index.html) 
 
 
 
