@@ -1,6 +1,6 @@
 # CalendarApp [socialkalendar.herokuapp.com](https://socialkalendar.herokuapp.com) 
-#email: omar@gmail.com 
-#pass: 123
+#email: dan@gmail.com
+#pass: dan
 
 
 #chat implementation:
